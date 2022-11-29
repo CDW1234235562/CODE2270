@@ -16,10 +16,6 @@
     }
     </script>
 
-    <div class="titleblock">
-        <h1>UNSW CODE2270 BIM view</h1><br>
-        <h2>Dingwen(Jack) Chen</h2>
-    </div>
 
     <div class="canvas">
         <div id="frame"></div>
@@ -40,17 +36,14 @@
         const scene = new THREE.Scene();
 
         //const camera = new THREE.OrthographicCamera( width / - 70, width / 70, height / 70, height / - 80, -200, 200 );
-        const camera = new THREE.PerspectiveCamera( 60, width / height, 0.1, 100000 );
-        camera.position.set( -17000, 17000, 4000)
+        const camera = new THREE.PerspectiveCamera( 60, width / height, 0.1, 1000 );
 
         //lighting
         const light = new THREE.AmbientLight( 0x404040, 1 ); // soft white light
         scene.add( light );
-        const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+        const directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
         directionalLight.position.set( 2, 10, 1);
-        directionalLight.target.position.set( 0, 0, 0);
         scene.add( directionalLight );
-        scene.add(directionalLight.target);
         
         // Renderer setup and appending to 'frame'
         const renderer = new THREE.WebGLRenderer( { antialias: true } );
@@ -65,8 +58,8 @@
         dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
         loader.setDRACOLoader( dracoLoader );
         loader.load('models/final_house.glb', function (gltf) {
+            gltf.scene.scale.set(0.0005, 0.0005, 0.0005);
             scene.add(gltf.scene);
-            window.gltf = gltf;
         }, 
     	function ( xhr ) {
 	    	console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
@@ -76,7 +69,7 @@
 
         //Scene
         scene.background = new THREE.Color(1, 0.9, 0.9)
-        camera.position.set( 1, 1, 3 );
+        camera.position.set( 0, 1, 3 );
 
         //Control
         const controls = new OrbitControls(camera, renderer.domElement);

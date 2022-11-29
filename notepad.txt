@@ -1,0 +1,4 @@
+<iframe src="/iris.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:1080px;width: 100%;border:none;overflow:hidden;"></iframe>
+
+
+<iframe src="/Quantity take-off and cost Schedule.htm" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:1080px;width: 70%;border:none;overflow:hidden;"></iframe>
