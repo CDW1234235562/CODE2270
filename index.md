@@ -9,7 +9,7 @@
 
 
 </script>
-<iframe scrolling="no" src="/iris.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:1200px;width: 100%;border:none;overflow:hidden;"></iframe>
+<iframe scrolling="no" src="./iris.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:1200px;width: 100%;border:none;overflow:hidden;"></iframe>
 
 > 3D orientation model viewer (Drag to move)
 
@@ -66,7 +66,7 @@
 >The schedule of the design
 Incoulding sequencing table and quantity take-off and cost schedule 
 
-<iframe src="/CODE2250 demo house sequencing table.htm" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:1080px;width: 100%;border:none;overflow:hidden;"></iframe>
+<iframe src="./CODE2250 demo house sequencing table.htm" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:1080px;width: 100%;border:none;overflow:hidden;"></iframe>
 
-<iframe src="/Quantity take-off and cost Schedule.htm" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:1080px;width: 100%;border:none;overflow:hidden;"></iframe>
+<iframe src="./Quantity take-off and cost Schedule.htm" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:1080px;width: 100%;border:none;overflow:hidden;"></iframe>
 
